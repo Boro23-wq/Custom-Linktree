@@ -4,60 +4,46 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>dev01d</title>
+        <link rel="icon" href="favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <img
+          className="image"
+          src="https://scontent-ort2-1.cdninstagram.com/v/t51.2885-19/s150x150/100056775_263041238397333_1797956456377483264_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_ohc=Qug7UZJWwvYAX_lYDPM&oh=2afb3fc53e967e73cbb0a7b21fe4dec3&oe=5F303886"
+        />
+        <h3 className="description">@dev01d</h3>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://jasonbehnke.io" className="card">
+            <h3>My Website</h3>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="https://dev.to/dev01d/diy-linktr-ee-with-next-js-2fdh"
             className="card"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3>How to build this</h3>
           </a>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="https://github.com/dev01d" className="card">
+            <h3>Github</h3>
+          </a>
+
+          <a href="https://www.twitch.tv/dev01d_" className="card">
+            <h3>Twitch</h3>
+          </a>
+
+          <a href="https://twitter.com/dev01d" className="card">
+            <h3>Twitter</h3>
+          </a>
+
+          <a href="mailto:contact@jasonbehnke.io" className="card">
+            <h3>Contact</h3>
           </a>
         </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -78,23 +64,8 @@ export default function Home() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .image {
+          border-radius: 50%;
         }
 
         a {
@@ -119,23 +90,14 @@ export default function Home() {
           font-size: 4rem;
         }
 
-        .title,
         .description {
           text-align: center;
+          color: black;
         }
 
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
 
         .grid {
@@ -145,19 +107,22 @@ export default function Home() {
           flex-wrap: wrap;
 
           max-width: 800px;
-          margin-top: 3rem;
+          margin-top: 1rem;
         }
 
         .card {
-          margin: 1rem;
+          margin: 0.5rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
+          background: #fafafa;
+
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          min-width: 350px;
         }
 
         .card:hover,
@@ -168,24 +133,33 @@ export default function Home() {
         }
 
         .card h3 {
-          margin: 0 0 1rem 0;
+          margin: 0 3rem 0 3rem;
           font-size: 1.5rem;
         }
 
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
+        /** Dark mode */
+        @media (prefers-color-scheme: dark) {
+          .container {
+            background: rgb(53, 53, 53);
+          }
+          .description {
+            color: white;
+          }
         }
 
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+        }
+        @media (max-width: 350px) {
+          .card h3 {
+            margin: 0 3rem 0 3rem;
+            font-size: 1.25rem;
+          }
+          .card {
+            min-width: 275px;
           }
         }
       `}</style>
