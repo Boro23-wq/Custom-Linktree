@@ -15,10 +15,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <img
-          className="image"
-          src="https://scontent-ort2-1.cdninstagram.com/v/t51.2885-19/s150x150/100056775_263041238397333_1797956456377483264_n.jpg?_nc_ht=scontent-ort2-1.cdninstagram.com&_nc_ohc=Qug7UZJWwvYAX_lYDPM&oh=2afb3fc53e967e73cbb0a7b21fe4dec3&oe=5F303886"
-        />
+        <img className="image" src="profile.jpg" />
         <h3 className="description">@dev01d</h3>
 
         <div className="grid">
@@ -72,6 +69,8 @@ export default function Home() {
 
         .image {
           border-radius: 50%;
+          height: 200px;
+          width: 200px;
         }
 
         a {
