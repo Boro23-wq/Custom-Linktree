@@ -6,6 +6,12 @@ export default function Home() {
       <Head>
         <title>dev01d</title>
         <link rel="icon" href="favicon.ico" />
+        <script
+          async
+          defer
+          data-website-id="39d4097d-a382-4288-94eb-de9889a649e6"
+          src="https://umami.dev01d.com/umami.js"
+        ></script>
       </Head>
 
       <main>
