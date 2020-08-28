@@ -8,9 +8,9 @@ export default function Home() {
         <link rel="icon" href="favicon.ico" />
         <script
           async
-          src="https://analytics.dev01d.com/tracker.js"
-          data-ackee-server="https://analytics.dev01d.com"
-          data-ackee-domain-id="8685382f-86fa-4aeb-9004-32f4a194af33"
+          defer
+          data-website-id="39d4097d-a382-4288-94eb-de9889a649e6"
+          src="https://umami.dev01d.com/umami.js"
         ></script>
       </Head>
 
