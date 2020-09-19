@@ -36,9 +36,6 @@ export default function Home() {
           <a href="https://www.twitch.tv/dev01d_" className="card">
             <h3>Twitch</h3>
           </a>
-          <a href="https://twitter.com/dev01d" className="card">
-            <h3>Twitter</h3>
-          </a>
           <a href="mailto:contact@jasonbehnke.io" className="card">
             <h3>Contact</h3>
           </a>
