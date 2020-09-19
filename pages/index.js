@@ -31,7 +31,7 @@ export default function Home() {
             href="https://vscodethemes.com/e/dev01d.devoid-theme"
             className="card"
           >
-            <h3>How to build this</h3>
+            <h3>VSCode Theme</h3>
           </a>
           <a href="https://github.com/dev01d" className="card">
             <h3>Github</h3>
