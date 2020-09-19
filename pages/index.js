@@ -28,7 +28,7 @@ export default function Home() {
             <h3>Technical writing</h3>
           </a>
           <a
-            href="https://dev.to/dev01d/diy-linktr-ee-with-next-js-2fdh"
+            href="https://vscodethemes.com/e/dev01d.devoid-theme"
             className="card"
           >
             <h3>How to build this</h3>
