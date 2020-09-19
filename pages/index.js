@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <img className="image" src="profile.jpg" />
-        <h3 className="description">@dev01d</h3>
+        <h3 className="description">jason.behnke</h3>
         <div className="grid">
           <a href="https://iwillvote.com" className="card">
             <h3>I want to vote</h3>
