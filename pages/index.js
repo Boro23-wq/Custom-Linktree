@@ -24,6 +24,9 @@ export default function Home() {
           <a href="https://jasonbehnke.io" className="card">
             <h3>My Website</h3>
           </a>
+          <a href="https://dev.to/dev01d" className="card">
+            <h3>Technical writing</h3>
+          </a>
           <a
             href="https://dev.to/dev01d/diy-linktr-ee-with-next-js-2fdh"
             className="card"
