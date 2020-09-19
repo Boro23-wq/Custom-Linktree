@@ -90,13 +90,11 @@ export default function Home() {
         }
 
         .description {
-          text-align: center;
           color: black;
-        }
-
-        .description {
+          text-align: center;
           line-height: 1.5;
           font-size: 1.5rem;
+          margin: 0.5rem 1rem;
         }
 
         .grid {
