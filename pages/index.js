@@ -5,7 +5,7 @@ export default function Home() {
     <div className='container'>
       <Head>
         <title>Sintu Boro</title>
-        <link rel='icon' href='favicon.ico' />
+        <link rel='icon' href='boro.ico' />
       </Head>
 
       <main>
@@ -165,11 +165,7 @@ export default function Home() {
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background-image: linear-gradient(
-              to right,
-              #5433ff,
-              #a6ffcb
-            );
+            background-image: linear-gradient(to right, #74ebd5, #acb6e5);
           }
           .description {
             color: white;
