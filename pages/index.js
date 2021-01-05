@@ -1,54 +1,66 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className='container'>
       <Head>
-        <title>dev01d</title>
-        <link rel="icon" href="favicon.ico" />
-        <script
-          async
-          defer
-          data-website-id="39d4097d-a382-4288-94eb-de9889a649e6"
-          src="https://umami.dev01d.com/umami.js"
-        ></script>
-        <script
-          async
-          src="https://analytics.dev01d.com/tracker.js"
-          data-ackee-server="https://analytics.dev01d.com"
-          data-ackee-domain-id="8685382f-86fa-4aeb-9004-32f4a194af33"
-        ></script>
+        <title>Sintu Boro</title>
+        <link rel='icon' href='favicon.ico' />
       </Head>
 
       <main>
-        <img className="image" src="profile.jpg" />
-        <h3 className="description">jason.behnke</h3>
-        <div className="grid">
-          <a href="https://jasonbehnke.io" className="card">
-            <h3>My Website</h3>
+        <img className='image' src='profile.jpg' />
+        <h3 className='description'>@SintuBoro</h3>
+        <div className='grid'>
+          <a
+            href='https://sintu-boro.netlify.app/'
+            target='_blank'
+            className='card'
+          >
+            <h3>PORTFOLIO</h3>
           </a>
-          <a href="https://dev.to/dev01d" className="card">
-            <h3>Technical writing</h3>
+
+          <a
+            href='https://boro-ui-ux.webflow.io/'
+            target='_blank'
+            className='card'
+          >
+            <h3>UI/UX PORTFOLIO</h3>
+          </a>
+
+          <a
+            href='https://boro-blogs.netlify.app/'
+            target='_blank'
+            className='card'
+          >
+            <h3>TECHNICAL BLOG</h3>
           </a>
           <a
-            href="https://vscodethemes.com/e/dev01d.devoid-theme"
-            className="card"
+            href='https://www.linkedin.com/in/sintu-boro-5a5aa415b/'
+            target='_blank'
+            className='card'
           >
-            <h3>VSCode Theme</h3>
+            <h3>LINKEDIN</h3>
           </a>
-          <a href="https://github.com/dev01d" className="card">
-            <h3>Github</h3>
+          <a
+            href='https://www.instagram.com/x.middlechild/'
+            target='_blank'
+            className='card'
+          >
+            <h3>INSTAGRAM</h3>
           </a>
-          <a href="https://www.twitch.tv/dev01d_" className="card">
-            <h3>Twitch</h3>
-          </a>
-          <a href="mailto:contact@jasonbehnke.io" className="card">
-            <h3>Contact</h3>
+          <a
+            href='https://github.com/Boro23-wq'
+            target='_blank'
+            className='card'
+          >
+            <h3>GITHUB</h3>
           </a>
         </div>
+        <footer className='footer'>© All rights reserved – Sintu Boro</footer>
       </main>
 
-      <style jsx>{`
+      <style jsx global>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -69,8 +81,8 @@ export default function Home() {
 
         .image {
           border-radius: 50%;
-          height: 200px;
-          width: 200px;
+          height: 85px;
+          width: 90px;
         }
 
         a {
@@ -79,7 +91,7 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
+          color: #fff;
           text-decoration: none;
         }
 
@@ -99,8 +111,11 @@ export default function Home() {
           color: black;
           text-align: center;
           line-height: 1.5;
-          font-size: 1.5rem;
+          font-size: 1rem;
           margin: 0.5rem 1rem;
+          // background: -webkit-linear-gradient(72deg, #4776e6, #8e54e9);
+          // -webkit-background-clip: text;
+          // -webkit-text-fill-color: transparent;
         }
 
         .grid {
@@ -109,41 +124,52 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 800px;
+          max-width: 400px;
           margin-top: 1rem;
         }
 
         .card {
           margin: 0.5rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
+          padding: 1rem;
           text-align: center;
-          background: #fafafa;
+          background: transparent;
 
-          color: inherit;
+          color: white;
           text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-          min-width: 350px;
+          border: 1px solid #f5f5f5;
+          border-radius: 45px;
+          transition: color 0.5s ease, border-color 0.1s ease;
+          min-width: 200px;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #000;
+          background: #f5f5f5;
+          border-color: #f5f5f5;
+          // #d7f379 #3925ec
         }
 
         .card h3 {
-          margin: 0 3rem 0 3rem;
-          font-size: 1.5rem;
+          margin: 0 1rem 0 1rem;
+          font-size: 0.9rem;
+        }
+
+        .footer {
+          color: white;
+          margin-top: 60px;
+          font-size: 0.75rem;
         }
 
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background: rgb(53, 53, 53);
+            background-image: linear-gradient(
+              to right,
+              #5433ff,
+              #a6ffcb
+            );
           }
           .description {
             color: white;
@@ -172,9 +198,9 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: Kanit, Segoe UI, Kanit, -apple-system, BlinkMacSystemFont,
+            Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
         }
 
         * {
@@ -182,5 +208,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
