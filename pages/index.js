@@ -68,6 +68,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-image: linear-gradient(to right, #74ebd5, #acb6e5);
         }
 
         main {
@@ -108,14 +109,11 @@ export default function Home() {
         }
 
         .description {
-          color: black;
+          color: white;
           text-align: center;
           line-height: 1.5;
           font-size: 1rem;
           margin: 0.5rem 1rem;
-          // background: -webkit-linear-gradient(72deg, #4776e6, #8e54e9);
-          // -webkit-background-clip: text;
-          // -webkit-text-fill-color: transparent;
         }
 
         .grid {
