@@ -163,7 +163,7 @@ export default function Home() {
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+            background-image: linear-gradient(to right, #43cea2, #185a9d);
           }
           .description {
             color: white;
