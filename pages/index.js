@@ -1,16 +1,39 @@
 import Head from 'next/head';
+import {
+  FACEBOOK_IMAGE_URL,
+  INSTAGRAM_IMAGE_URL,
+  LINKEDIN_IMAGE_URL,
+} from '../images-export.js';
+
+import {
+  faLocationArrow,
+  faMapMarked,
+  faMapMarkedAlt,
+  faMapMarker,
+  faMapPin,
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
     <div className='container'>
       <Head>
-        <title>Sintu Boro</title>
-        <link rel='icon' href='boro.ico' />
+        <title>Sintu Boro | Profile</title>
+        <link rel='icon' href='icon.png' />
       </Head>
 
       <main>
         <img className='image' src='profile.jpg' />
         <h3 className='description'>@SintuBoro</h3>
+        <div className='location'>
+          <FontAwesomeIcon
+            height='20px'
+            width='10px'
+            color='rgba(255, 255, 255, 0.5)'
+            icon={faMapPin}
+          />
+          <h4 className='subtitle'>Bangalore, KA</h4>
+        </div>
         <div className='grid'>
           <a
             href='https://sintu-boro.netlify.app/'
@@ -36,18 +59,11 @@ export default function Home() {
             <h3>TECHNICAL BLOG</h3>
           </a>
           <a
-            href='https://www.linkedin.com/in/sintu-boro-5a5aa415b/'
-            target='_blank'
-            className='card'
-          >
-            <h3>LINKEDIN</h3>
-          </a>
-          <a
             href='https://www.instagram.com/x.middlechild/'
             target='_blank'
             className='card'
           >
-            <h3>INSTAGRAM</h3>
+            <h3>MEDIUM</h3>
           </a>
           <a
             href='https://github.com/Boro23-wq'
@@ -56,11 +72,42 @@ export default function Home() {
           >
             <h3>GITHUB</h3>
           </a>
+          <div className='social-div'>
+            {/* INSTAGRAM */}
+            <a
+              className='social-card'
+              target='_blank'
+              href='https://www.instagram.com/x.middlechild/'
+            >
+              <img className='social-icons' src={INSTAGRAM_IMAGE_URL} />
+            </a>
+            {/* LINKEDIN */}
+            <a
+              className='social-card'
+              target='_blank'
+              href='https://www.instagram.com/x.middlechild/'
+            >
+              <img className='social-icons' src={FACEBOOK_IMAGE_URL} />
+            </a>
+            {/* FACEBOOK */}
+            <a
+              className='social-card'
+              href='https://www.facebook.com/404slimboysavage/'
+              target='_blank'
+            >
+              <img className='social-icons' src={LINKEDIN_IMAGE_URL} />
+            </a>
+          </div>
         </div>
         <footer className='footer'>© All rights reserved – Sintu Boro</footer>
       </main>
 
       <style jsx global>{`
+        .location {
+          display: flex;
+          flex-direction: row;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -68,7 +115,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-image: linear-gradient(to right, #74ebd5, #acb6e5);
+          background-image: linear-gradient(to right, #1cd8d2, #93edc7);
         }
 
         main {
@@ -146,12 +193,18 @@ export default function Home() {
           color: #000;
           background: #f5f5f5;
           border-color: #f5f5f5;
-          // #d7f379 #3925ec
         }
 
         .card h3 {
           margin: 0 1rem 0 1rem;
           font-size: 0.9rem;
+        }
+
+        .subtitle {
+          margin: 0;
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.5);
+          margin-left: 10px;
         }
 
         .footer {
@@ -160,10 +213,31 @@ export default function Home() {
           font-size: 0.75rem;
         }
 
+        .social-div {
+          display: flex;
+        }
+
+        .social-icons {
+          max-width: 20px;
+        }
+
+        .social-card {
+          margin: 0.75rem;
+          text-align: center;
+          background: transparent;
+
+          color: white;
+          text-decoration: none;
+          border-radius: 45px;
+          transition: color 0.5s ease, border-color 0.1s ease;
+          min-width: 46px;
+        }
+
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background-image: linear-gradient(to right, #43cea2, #185a9d);
+            background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+            // background-image: linear-gradient(to right, #1cd8d2, #93edc7);
           }
           .description {
             color: white;
