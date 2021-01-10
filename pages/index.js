@@ -28,7 +28,7 @@ export default function Home() {
         <div className='location'>
           <FontAwesomeIcon
             height='20px'
-            width='10px'
+            width='8px'
             color='rgba(255, 255, 255, 0.5)'
             icon={faMapPin}
           />
