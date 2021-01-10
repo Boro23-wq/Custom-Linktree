@@ -73,6 +73,14 @@ export default function Home() {
             <h3>GITHUB</h3>
           </a>
           <div className='social-div'>
+            {/* LINKEDIN */}
+            <a
+              className='social-card'
+              href='https://www.linkedin.com/in/sintu-boro/'
+              target='_blank'
+            >
+              <img className='social-icons' src={LINKEDIN_IMAGE_URL} />
+            </a>
             {/* INSTAGRAM */}
             <a
               className='social-card'
@@ -81,21 +89,13 @@ export default function Home() {
             >
               <img className='social-icons' src={INSTAGRAM_IMAGE_URL} />
             </a>
-            {/* LINKEDIN */}
-            <a
-              className='social-card'
-              target='_blank'
-              href='https://www.instagram.com/x.middlechild/'
-            >
-              <img className='social-icons' src={FACEBOOK_IMAGE_URL} />
-            </a>
             {/* FACEBOOK */}
             <a
               className='social-card'
-              href='https://www.facebook.com/404slimboysavage/'
               target='_blank'
+              href='https://www.facebook.com/404slimboysavage/'
             >
-              <img className='social-icons' src={LINKEDIN_IMAGE_URL} />
+              <img className='social-icons' src={FACEBOOK_IMAGE_URL} />
             </a>
           </div>
         </div>
