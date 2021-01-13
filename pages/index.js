@@ -5,13 +5,7 @@ import {
   LINKEDIN_IMAGE_URL,
 } from '../images-export.js';
 
-import {
-  faLocationArrow,
-  faMapMarked,
-  faMapMarkedAlt,
-  faMapMarker,
-  faMapPin,
-} from '@fortawesome/free-solid-svg-icons';
+import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
@@ -59,7 +53,7 @@ export default function Home() {
             <h3>TECHNICAL BLOG</h3>
           </a>
           <a
-            href='https://www.instagram.com/x.middlechild/'
+            href='https://sboro2899.medium.com/'
             target='_blank'
             className='card'
           >
