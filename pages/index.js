@@ -7,7 +7,6 @@ import {
 
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import SpotifyPlayer from './SpotifyPlayer';
 
 export default function Home() {
   return (
@@ -29,12 +28,14 @@ export default function Home() {
           />
           <h4 className='subtitle'>Bangalore, KA</h4>
         </div>
-        <SpotifyPlayer
-          uri='spotify:user:0qpo4klaunjfdh5yfujxr3z0n:playlist:1y9lApZ1pj4dgqXwToxLAj'
-          size='compact'
-          theme='black'
-          view='list'
-        />
+        <iframe
+          src='https://open.spotify.com/embed/playlist/1y9lApZ1pj4dgqXwToxLAj'
+          width='300'
+          height='80'
+          frameborder='0'
+          allowtransparency='true'
+          allow='encrypted-media'
+        ></iframe>
         <div className='grid'>
           <a
             href='https://sintu-boro.netlify.app/'
