@@ -29,6 +29,7 @@ export default function Home() {
           <h4 className='subtitle'>Bangalore, KA</h4>
         </div>
         <iframe
+          class='iframe-placeholder'
           src='https://open.spotify.com/embed/playlist/1y9lApZ1pj4dgqXwToxLAj'
           width='300'
           height='80'
@@ -109,6 +110,11 @@ export default function Home() {
           display: flex;
           flex-direction: row;
           margin-bottom: 1.5rem;
+        }
+
+        .iframe-placeholder {
+          background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23240b36" x="50%" y="50%" font-family="\'Kanit\', sans-serif" font-size="18" text-anchor="middle">Loading...</text></svg>')
+            0px 0px no-repeat;
         }
 
         .container {
