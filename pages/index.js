@@ -7,6 +7,7 @@ import {
 
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import SpotifyPlayer from './SpotifyPlayer';
 
 export default function Home() {
   return (
@@ -28,6 +29,12 @@ export default function Home() {
           />
           <h4 className='subtitle'>Bangalore, KA</h4>
         </div>
+        <SpotifyPlayer
+          uri='spotify:user:0qpo4klaunjfdh5yfujxr3z0n:playlist:1y9lApZ1pj4dgqXwToxLAj'
+          size='compact'
+          theme='black'
+          view='list'
+        />
         <div className='grid'>
           <a
             href='https://sintu-boro.netlify.app/'
@@ -100,6 +107,7 @@ export default function Home() {
         .location {
           display: flex;
           flex-direction: row;
+          margin-bottom: 1.5rem;
         }
 
         .container {
@@ -109,7 +117,8 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-image: linear-gradient(to right, #1cd8d2, #93edc7);
+          background-image: linear-gradient(to right, #c31432, #240b36);
+          // background-image: linear-gradient(to right, #1cd8d2, #93edc7);
         }
 
         main {
@@ -230,7 +239,8 @@ export default function Home() {
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+            background-image: linear-gradient(to right, #c31432, #240b36);
+            // background-image: linear-gradient(to right, #8e2de2, #4a00e0);
             // background-image: linear-gradient(to right, #1cd8d2, #93edc7);
           }
           .description {
