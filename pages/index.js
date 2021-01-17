@@ -5,8 +5,12 @@ import {
   LINKEDIN_IMAGE_URL,
 } from '../images-export.js';
 
-import { faMapPin } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {
+//   faMapMarked,
+//   faMapPin,
+//   faMapSigns,
+// } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Home() {
   return (
@@ -17,9 +21,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <img className='image' src='profile.jpg' />
-        <h3 className='description'>@SintuBoro</h3>
-        <div className='location'>
+        <img className='image' src='icon-1.png' />
+        <a
+          className='description'
+          href='https://www.linkedin.com/in/sintu-boro-5a5aa415b/'
+          target='_blank'
+        >
+          @BORO
+        </a>
+        {/* Location */}
+        {/* <div className='location'>
           <FontAwesomeIcon
             height='20px'
             width='8px'
@@ -27,13 +38,19 @@ export default function Home() {
             icon={faMapPin}
           />
           <h4 className='subtitle'>Bangalore, KA</h4>
+        </div> */}
+        {/* status indicator */}
+        <div className='status'>
+          <small>Status:</small>
+          <small className='status-indicator'></small>
+          <h4 className='subtitle'>Writing some code today!</h4>
         </div>
         <iframe
-          class='iframe-placeholder'
-          src='https://open.spotify.com/embed/playlist/1y9lApZ1pj4dgqXwToxLAj'
+          className='iframe-placeholder'
+          src='https://open.spotify.com/embed/playlist/2g2Lie6Is7ZSyHvwmOV6xh'
           width='300'
           height='80'
-          frameborder='0'
+          frameBorder='0'
           allowtransparency='true'
           allow='encrypted-media'
         ></iframe>
@@ -102,10 +119,31 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <footer className='footer'>© All rights reserved – Sintu Boro</footer>
+        <footer className='footer'>
+          © All rights reserved 🤘 – Sintu Boro
+        </footer>
       </main>
 
       <style jsx global>{`
+        .status {
+          display: flex;
+          flex-direction: row;
+          color: white;
+          margin: 0.5rem auto;
+          padding: 0.3rem 0.45rem;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 0.25rem;
+        }
+
+        .status-indicator {
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          margin-top: 0.4rem;
+          margin-left: 0.5rem;
+          background-color: #08f26e;
+        }
+
         .location {
           display: flex;
           flex-direction: row;
@@ -113,8 +151,10 @@ export default function Home() {
         }
 
         .iframe-placeholder {
-          background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23240b36" x="50%" y="50%" font-family="\'Kanit\', sans-serif" font-size="18" text-anchor="middle">Loading...</text></svg>')
+          margin-top: 0.5rem;
+          background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23808080" x="50%" y="50%" font-family="\'Kanit\', sans-serif" font-size="14" text-anchor="middle">Loading Spotify...</text></svg>')
             0px 0px no-repeat;
+          font-family: Kanit;
         }
 
         .container {
@@ -124,7 +164,8 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background-image: linear-gradient(to right, #c31432, #240b36);
+          background-image: linear-gradient(to right, #000, #14061f);
+          // background-image: linear-gradient(to right, #c31432, #240b36);
           // background-image: linear-gradient(to right, #1cd8d2, #93edc7);
         }
 
@@ -191,7 +232,7 @@ export default function Home() {
 
           color: white;
           text-decoration: none;
-          border: 1px solid #f5f5f5;
+          border: 1px solid rgba(255, 255, 255, 0.2);
           border-radius: 45px;
           transition: color 0.5s ease, border-color 0.1s ease;
           min-width: 200px;
@@ -246,7 +287,8 @@ export default function Home() {
         /** Dark mode */
         @media (prefers-color-scheme: dark) {
           .container {
-            background-image: linear-gradient(to right, #c31432, #240b36);
+            background-image: linear-gradient(to right, #000, #14061f);
+            // background-image: linear-gradient(to right, #c31432, #240b36);
             // background-image: linear-gradient(to right, #8e2de2, #4a00e0);
             // background-image: linear-gradient(to right, #1cd8d2, #93edc7);
           }
