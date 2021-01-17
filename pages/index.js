@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <iframe
           className='iframe-placeholder'
-          src='https://open.spotify.com/embed/playlist/2g2Lie6Is7ZSyHvwmOV6xh'
+          src='https://open.spotify.com/embed/playlist/1y9lApZ1pj4dgqXwToxLAj'
           width='300'
           height='80'
           frameBorder='0'
@@ -139,7 +139,7 @@ export default function Home() {
           width: 10px;
           height: 10px;
           border-radius: 100%;
-          margin-top: 0.4rem;
+          margin-top: 0.35rem;
           margin-left: 0.5rem;
           background-color: #08f26e;
         }
