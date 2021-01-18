@@ -165,7 +165,7 @@ export default function Home() {
 
         .footer-next-icon {
           max-width: 30px;
-          margin-top: 2px;
+          margin-top: 1px;
           margin-left: 6.75px;
           margin-right: 6.75px;
         }
