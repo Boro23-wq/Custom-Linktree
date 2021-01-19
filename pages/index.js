@@ -190,7 +190,7 @@ export default function Home() {
           width: 10px;
           height: 10px;
           border-radius: 100%;
-          margin-top: 0.4rem;
+          margin-top: 0.375rem;
           margin-left: 0.5rem;
           background-color: #08f26e;
         }
