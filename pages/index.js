@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { VERCEL_IMAGE_URL, NEXTJS_IMAGE_URL } from '../images-export.js';
+import { NEXTJS_IMAGE_URL } from '../images-export.js';
 
 export default function Home() {
   return (
@@ -18,22 +18,13 @@ export default function Home() {
         >
           Boro (@Boro23-wq)
         </a>
-        {/* Location */}
-        {/* <div className='location'>
-          <FontAwesomeIcon
-            height='20px'
-            width='8px'
-            color='rgba(255, 255, 255, 0.5)'
-            icon={faMapPin}
-          />
-          <h4 className='subtitle'>Bangalore, KA</h4>
-        </div> */}
         {/* status indicator */}
         <div className='status'>
           <small>Status:</small>
           <small className='status-indicator'></small>
           <h4 className='subtitle'>Writing some code today!</h4>
         </div>
+
         <iframe
           className='iframe-placeholder'
           src='https://open.spotify.com/embed/playlist/6Q3Qo3XxSj5Cu9pQJlBfzG'
@@ -43,6 +34,7 @@ export default function Home() {
           allowtransparency='true'
           allow='encrypted-media'
         ></iframe>
+
         <div className='grid'>
           <a
             href='https://sintu-boro.netlify.app/'
@@ -203,7 +195,7 @@ export default function Home() {
 
         .iframe-placeholder {
           margin-top: 0.5rem;
-          background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23808080" x="50%" y="50%" font-family="\'Kanit\', sans-serif" font-size="14" text-anchor="middle">Loading Spotify...</text></svg>')
+          background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23808080" x="50%" y="50%" font-family="sans-serif" font-size="14" text-anchor="middle">Loading Spotify...</text></svg>')
             0px 0px no-repeat;
         }
 
