@@ -13,10 +13,10 @@ export default function Home() {
         <img className='image' src='icon-1.png' />
         <a
           className='description'
-          href='https://www.linkedin.com/in/sintu-boro-5a5aa415b/'
+          href='https://github.com/Boro23-wq'
           target='_blank'
         >
-          @Boro
+          Boro (@Boro23-wq)
         </a>
         {/* Location */}
         {/* <div className='location'>
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <iframe
           className='iframe-placeholder'
-          src='https://open.spotify.com/embed/playlist/2g2Lie6Is7ZSyHvwmOV6xh'
+          src='https://open.spotify.com/embed/playlist/6Q3Qo3XxSj5Cu9pQJlBfzG'
           width='300'
           height='80'
           frameBorder='0'
@@ -190,9 +190,9 @@ export default function Home() {
           width: 10px;
           height: 10px;
           border-radius: 100%;
-          margin-top: 0.375rem;
+          margin-top: 0.3rem;
           margin-left: 0.5rem;
-          background-color: #08f26e;
+          background-color: #ff006a;
         }
 
         .location {
@@ -309,7 +309,7 @@ export default function Home() {
         .subtitle {
           margin: 0;
           font-size: 0.8rem;
-          color: rgba(255, 255, 255, 0.5);
+          color: #fff;
           margin-left: 10px;
         }
 
