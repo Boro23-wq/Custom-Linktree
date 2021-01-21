@@ -309,7 +309,7 @@ export default function Home() {
         .subtitle {
           margin: 0;
           font-size: 0.8rem;
-          color: #fff;
+          color: #999;
           margin-left: 10px;
         }
 
