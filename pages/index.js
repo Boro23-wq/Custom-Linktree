@@ -131,8 +131,8 @@ export default function Home() {
         <footer className='footer'>
           © Boro 🤘 - Powered by
           <img className='footer-next-icon' src={NEXTJS_IMAGE_URL} />{' '}
-          <span className='x-span'>x</span>{' '}
-          <img className='footer-vercel-icon' src={VERCEL_IMAGE_URL} />
+          {/* <span className='x-span'>x</span>{' '}
+          <img className='footer-vercel-icon' src={VERCEL_IMAGE_URL} /> */}
         </footer>
       </main>
 
@@ -164,9 +164,9 @@ export default function Home() {
         }
 
         .footer-next-icon {
-          max-width: 30px;
-          margin-top: 1px;
-          margin-left: 6.75px;
+          max-width: 25px;
+          margin-top: 3px;
+          margin-left: 5px;
           margin-right: 6.75px;
         }
 
