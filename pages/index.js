@@ -27,7 +27,7 @@ export default function Home() {
 
         <iframe
           className='iframe-placeholder'
-          src='https://open.spotify.com/embed/playlist/6Q3Qo3XxSj5Cu9pQJlBfzG'
+          src='https://open.spotify.com/embed/playlist/0bPQqP4WUucte3csfNxgyg'
           width='300'
           height='80'
           frameBorder='0'
