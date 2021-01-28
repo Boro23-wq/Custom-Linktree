@@ -91,10 +91,34 @@ export default function SpotifyPlayer() {
 
           {data?.isPlaying ? (
             <Text color='rgba(110, 125, 154)' fontSize='7.5px'>
-              Now playing on Spotify
+              <span
+                style={{
+                  height: '4.5px',
+                  width: '4.5px',
+                  backgroundColor: 'rgb(98,213,110)',
+                  borderRadius: '50%',
+                  display: 'inline-block',
+                  justifyContent: 'center',
+                  marginRight: '1.5px',
+                }}
+              ></span>{' '}
+              Online - Playing on Spotify
             </Text>
           ) : (
-            <Text color='rgba(110, 125, 154)' fontSize='7.5px'></Text>
+            <Text color='rgba(110, 125, 154)' fontSize='7.5px'>
+              <span
+                style={{
+                  height: '4.5px',
+                  width: '4.5px',
+                  backgroundColor: '#cf000f',
+                  borderRadius: '50%',
+                  display: 'inline-block',
+                  justifyContent: 'center',
+                  marginRight: '1.5px',
+                }}
+              ></span>{' '}
+              Offline
+            </Text>
           )}
         </Flex>
         {data?.isPlaying ? (
