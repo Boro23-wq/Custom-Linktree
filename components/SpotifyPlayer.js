@@ -5,6 +5,7 @@ import fetcher from '../lib/fetcher';
 
 export default function SpotifyPlayer() {
   const { data } = useSWR('/api/now-playing/', fetcher);
+  console.log(data);
 
   const track = {
     spotifyProfileIcon:
