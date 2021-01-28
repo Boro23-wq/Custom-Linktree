@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { NEXTJS_IMAGE_URL } from '../images-export.js';
+import SpotifyPlayer from '../components/SpotifyPlayer.js';
 
 export default function Home() {
   return (
@@ -24,16 +25,8 @@ export default function Home() {
           <small className='status-indicator'></small>
           <h4 className='subtitle'>Writing some code today!</h4>
         </div>
-
-        <iframe
-          className='iframe-placeholder'
-          src='https://open.spotify.com/embed/playlist/0bPQqP4WUucte3csfNxgyg'
-          width='300'
-          height='80'
-          frameBorder='0'
-          allowtransparency='true'
-          allow='encrypted-media'
-        ></iframe>
+        
+        <SpotifyPlayer />
 
         <div className='grid'>
           <a
@@ -156,7 +149,7 @@ export default function Home() {
         }
 
         .footer-next-icon {
-          max-width: 25px;
+          max-width: 28px;
           margin-top: 3px;
           margin-left: 5px;
           margin-right: 6.75px;
