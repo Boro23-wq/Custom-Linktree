@@ -25,7 +25,7 @@ export default function Home() {
           <small className='status-indicator'></small>
           <h4 className='subtitle'>Writing some code today!</h4>
         </div>
-        
+
         <SpotifyPlayer />
 
         <div className='grid'>
@@ -149,7 +149,7 @@ export default function Home() {
         }
 
         .footer-next-icon {
-          max-width: 28px;
+          max-width: 25px;
           margin-top: 3px;
           margin-left: 5px;
           margin-right: 6.75px;
