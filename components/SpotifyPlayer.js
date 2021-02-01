@@ -8,8 +8,6 @@ export default function SpotifyPlayer() {
   console.log(data);
 
   const track = {
-    spotifyProfileIcon:
-      'https://raw.githubusercontent.com/Boro23-wq/social-icons/8783eea63bb207909c54dee4d3b036d90759c158/spotify-logo.svg',
     spotifyIcon:
       'https://raw.githubusercontent.com/Boro23-wq/social-icons/master/spotify.png',
   };
@@ -46,7 +44,7 @@ export default function SpotifyPlayer() {
           width='58px'
           maxH='58px'
           name='Track Icon'
-          src={track.spotifyProfileIcon}
+          src={track.spotifyIcon}
         />
       )}
 
